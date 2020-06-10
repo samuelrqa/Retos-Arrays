@@ -1,15 +1,15 @@
 <?php
 
 //--------------------------RETO 1 --------------------------
-echo "\nRETO 1 - NIVEL COQUITO:\nIMPRIMIR LOS 10 PRIMEROS NÚMEROS PARES\n";
+echo "<br><b>RETO 1 - NIVEL COQUITO:<br>IMPRIMIR LOS 10 PRIMEROS NÚMEROS PARES</b><br>";
 $pares = array(2,4,6,8,10,12,14,16,18,20);
 
 foreach ($pares as $par)
-    echo "$par\n";
+    echo "$par<br>";
 
 //-------------------------- RETO 2 --------------------------
 
-echo "\nRETO 2 - NIVEL SAYAYIN:\nIMPRIMIR LA SUMA DE LOS 100 PRIMEROS NÚMEROS NATURALES";
+echo "<br><b>RETO 2 - NIVEL SAYAYIN:<br>IMPRIMIR LA SUMA DE LOS 100 PRIMEROS NÚMEROS NATURALES</b>";
 $naturales = array();
 $suma = 0;
 
@@ -18,7 +18,7 @@ for ($i = 0; $i<100; $i++) {
     $naturales[$i] = $i+1;
     // Comprobar los elementos del arreglo (se puede omitir en este reto)
     if ($i % 20 == 0)
-        echo "\n";
+        echo "<br>";
     echo $naturales[$i]."\t";
 }
 
@@ -26,11 +26,11 @@ for ($i = 0; $i<100; $i++) {
 foreach ($naturales as $num)
     $suma += $num;
 
-echo "\n\nLa suma es ".$suma."\n";
+echo "<br><br>La suma es ".$suma."<br>";
 
 //-------------------------- RETO 3 --------------------------
 
-echo "\nRETO 3 - NIVEL ESPARTANO:\nIMPRIMIR INFORMACIÓN DE JUGADORES COLOMBIANOS EN EL EXTERIOR\n\n";
+echo "<br><b>RETO 3 - NIVEL ESPARTANO:<br>IMPRIMIR INFORMACIÓN DE JUGADORES COLOMBIANOS EN EL EXTERIOR</b><br><br>";
 
 $jugadoresColombianos = array (
     $jugador1 = array("Nombre"=>"Radamel Falcao García","Posición"=>"Delantero","País"=>"Turquía","Edad"=>34,"Estatura"=>1.77),
@@ -49,8 +49,8 @@ $jugadoresColombianos = array (
 
 $i = 1;
 foreach ($jugadoresColombianos as $jugador) {
-    echo "Jugador ".$i++."\n";
+    echo "<b>JUGADOR ".$i++."</b><br>";
     foreach ($jugador as $clave=>$valor)
-        echo $clave.": ".$valor."\n";
-    echo "-----------------------------\n";
+        echo "<b>".$clave.":</b> ".$valor."<br>";
+    echo "-----------------------------<br>";
 }
