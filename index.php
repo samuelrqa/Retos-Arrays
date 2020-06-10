@@ -19,7 +19,7 @@ for ($i = 0; $i<100; $i++) {
     // Comprobar los elementos del arreglo (se puede omitir en este reto)
     if ($i % 20 == 0)
         echo "<br>";
-    echo $naturales[$i]."\t";
+    echo sprintf("%02d", $naturales[$i])."\t";
 }
 
 //Recorrer y sumar
